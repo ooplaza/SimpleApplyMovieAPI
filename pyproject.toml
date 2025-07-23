@@ -1,0 +1,50 @@
+# pytest
+[tool.pytest.ini_options]
+python_files = "test_*.py"
+addopts = "--strict-markers"
+
+# isort
+[tool.isort]
+line_length = 88
+profile = "black"
+sections = [
+    "FUTURE",
+    "STDLIB",
+    "THIRDPARTY",
+    "FIRSTPARTY",
+    "LOCALFOLDER",
+]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+skip_glob = ["**/migrations/*.py"]
+
+# coverage
+[tool.coverage.run]
+omit = [
+    "*tests*",
+    "*__init__.py",
+    "config/*",
+    "conftest.py",
+]
+branch = true
+source = ["your_project_package_name"]  # ← Replace with your main FastAPI app package (e.g., "app")
+
+[tool.coverage.report]
+omit = [
+    "*tests*",
+    "*__init__.py",
+    "config/*",
+    "conftest.py",
+]
+show_missing = true
+skip_covered = true
+precision = 2
+
+# commitizen
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+update_changelog_on_bump = true
+hook = true
