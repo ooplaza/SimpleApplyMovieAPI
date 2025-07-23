@@ -29,7 +29,7 @@ omit = [
     "conftest.py",
 ]
 branch = true
-source = ["your_project_package_name"]  # ← Replace with your main FastAPI app package (e.g., "app")
+source = ["app"]
 
 [tool.coverage.report]
 omit = [
