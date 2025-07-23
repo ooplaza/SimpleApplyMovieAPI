@@ -1,20 +1,6 @@
 version: "3.9"
 
 services:
-  simpleapplydb:
-    image: postgres:17
-    container_name: simpleapplydb
-    restart: always
-    environment:
-      POSTGRES_DB: simpleapplydb
-      POSTGRES_USER: fastapiuser
-      POSTGRES_PASSWORD: fastapipassword
-    volumes:
-      - ./database-data:/var/lib/postgresql/data
-      - ./config/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
-    ports:
-      - "5432:5432"
-
   simpleapplyapi:
     build:
       context: .
@@ -26,7 +12,5 @@ services:
       - .:/app
     ports:
       - "8000:8000"
-    depends_on:
-      - simpleapplydb
     command: >
       uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
