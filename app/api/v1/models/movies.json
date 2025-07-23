@@ -1,0 +1,37 @@
+[
+  {
+    "id": "tt0111161",
+    "title": "The Shawshank Redemption",
+    "year": "1994",
+    "genres": ["drama"],
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+  },
+  {
+    "id": "tt0068646",
+    "title": "The Godfather",
+    "year": "1972",
+    "genres": ["crime", "drama"],
+    "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+  },
+  {
+    "id": "tt0468569",
+    "title": "The Dark Knight",
+    "year": "2008",
+    "genres": ["action", "crime", "drama"],
+    "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice."
+  },
+  {
+    "id": "tt0071562",
+    "title": "The Godfather: Part II",
+    "year": "1974",
+    "genres": ["crime", "drama"],
+    "plot": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate."
+  },
+  {
+    "id": "tt0167260",
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": "2003",
+    "genres": ["action", "adventure", "drama"],
+    "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
+  }
+]
