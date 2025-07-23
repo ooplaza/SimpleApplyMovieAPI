@@ -1,7 +1,20 @@
-# Python Developer Take-Home Challenge: Movie Watchlist API
+# **Python Developer Take-Home Challenge: Movie Watchlist API**
 
 Welcome to our take-home programming challenge! This exercise is designed to assess your skills in building a simple, yet functional, RESTful API using Python. We're looking for clean, well-structured, and maintainable code that demonstrates your understanding of core software engineering principles.
 
+## **Project Setup**
+1. Clone the repository
+```bash
+git@github.com:ooplaza/SimpleApplyMovieAPI.git
+```
+2. Change directory
+```bash
+cd SimpleApplyMovieAPI
+```
+3. Build the Container and enjoy
+```
+docker compose up --build
+```
 ## The Challenge
 
 Your task is to complete a "Movie Watchlist" service. This service will allow users to manage a list of movies they want to watch. We have provided a boilerplate with a predefined list of movies and a simple in-memory database.
